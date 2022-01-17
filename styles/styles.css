@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 120%;
+}
+
+/* FLEX-BOX */
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.items {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.header, #links {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.action, .hero, #info-panel {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header, .hero, .info {
+    flex: 0 75%;
+    gap: 3rem;
+}
+
+.quote, #info-panel {
+    flex: 0 60%;
+}
+
+#info-panel {
+    justify-content: center;
+    gap: 2rem;
+}
+
+.action {
+    flex: 0 75%;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#links {
+    justify-content: space-evenly;
+}
+
+#logo, #links {
+    flex: 1;
+}
+
+#hero-body {
+    flex: 1;
+}
+
+.hero img {
+    max-height: 15rem;
+    width: 100%;
+    flex: 1;
+}
+
+/* --------- STYLING ---------- */
+
+.item-1, .item-2, .item-6 {
+    background-color: #1f2937;
+}
+
+.item-4 {
+    background-color: #e5e7eb;
+}
+
+.item-5 {
+    padding: 5rem 0;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+
+#links {
+    list-style-type: none;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+#hero-body, #links a {
+    color: #e5e7eb;
+}
+
+#hero-body h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.info {
+    padding: 2rem 0;
+}
+
+.info h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+}
+
+.panel img {
+    width: 8rem;
+    max-height: 8rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #3882f6;
+    margin: 0 auto;
+}
+
+.quote h3 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 115%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.quote p {
+    text-align: right;
+    font-weight: bold;
+}
+
+.action, .action button, #hero-body button {
+    background-color: #3882f6;
+    color: #fff;
+}
+
+.action {
+    padding: 2rem;
+}
+
+.action button, #hero-body button {
+    border-radius: 0.5rem;
+}
+
+.action button {
+    padding: 0.2rem 2rem;
+    border: 0.1rem solid #fff;
+}
+
+#hero-body button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+footer {
+    color: #fff;
+}
