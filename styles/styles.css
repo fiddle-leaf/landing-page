@@ -23,14 +23,18 @@ body {
     justify-content: center;
 }
 
-.header, #links {
+.header {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.info {
+.info, .panel {
     display: flex;
     flex-flow: column nowrap;
+}
+
+.panel {
+    flex: 0;
 }
 
 .action, .hero, #info-panel {
@@ -59,6 +63,8 @@ body {
 }
 
 #links {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
@@ -79,7 +85,7 @@ body {
 /* --------- STYLING ---------- */
 
 .item-1, .item-2, .item-6 {
-    background-color: #1f2937;
+    background-color: hsl(315, 35%, 40%);
 }
 
 .item-4 {
@@ -94,6 +100,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: #f9faf8;
+    line-height: 120%;
 }
 
 #links {
@@ -104,15 +111,25 @@ body {
     text-decoration: none;
 }
 
+#links a:hover {
+    text-decoration: wavy underline hsl(315, 35%, 20%);
+    color:hsl(315, 70%, 80%);
+}
+
 #hero-body, #links a {
     color: #e5e7eb;
 }
 
 #hero-body h1 {
-    font-size: 48px;
+    font-size: 40px;
     color: #f9faf8;
     font-weight: 900;
     line-height: 120%;
+}
+
+#hero-body p {
+    padding-top: 1rem;
+    line-height: 150%;
 }
 
 .info {
@@ -124,13 +141,18 @@ body {
     font-weight: 900;
     color: #1f2937;
     text-align: center;
+    line-height: 110%;
+}
+
+.panel p {
+    padding: 0.5rem 0;
 }
 
 .panel img {
     width: 8rem;
     max-height: 8rem;
     border-radius: 0.5rem;
-    border: 0.2rem solid #3882f6;
+    border: 0.2rem solid hsl(315, 35%, 60%);
     margin: 0 auto;
 }
 
@@ -145,17 +167,18 @@ body {
 }
 
 .quote p {
-    text-align: right;
+    text-align: center;
     font-weight: bold;
 }
 
 .action, .action button, #hero-body button {
-    background-color: #3882f6;
+    background-color: hsl(315, 35%, 60%);
     color: #fff;
 }
 
 .action {
     padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 .action button, #hero-body button {
